@@ -66,15 +66,15 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += TSCd
+  bin_PROGRAMS += GLPMd
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += TSC-cli TSC-tx
+  bin_PROGRAMS += GLPM-cli GLPM-tx
 endif
 
 .PHONY: FORCE
-# TSC core #
+# GLPM core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   accumulators.h \
@@ -190,7 +190,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between TSCd and TSC-qt
+# server: shared between GLPMd and GLPM-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
@@ -236,7 +236,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between TSCd and TSC-qt, but only linked
+# wallet: shared between GLPMd and GLPM-qt, but only linked
 # when wallet enabled
 
 libbitcoin_wallet_a_CFLAGS = -fPIC
@@ -356,7 +356,7 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/Params.cpp \
   libzerocoin/SerialNumberSignatureOfKnowledge.cpp
 
-# common: shared between TSCd, and TSC-qt and non-server tools
+# common: shared between GLPMd, and GLPM-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
   accumulators.cpp \
@@ -416,7 +416,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 libbitcoin_util_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-# cli: shared between TSC-cli and TSC-qt
+# cli: shared between GLPM-cli and GLPM-qt
 libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
@@ -426,7 +426,7 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-TSCd_LDADD = \
+GLPMd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UNIVALUE) \
@@ -438,26 +438,26 @@ TSCd_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_ZMQ
-TSCd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+GLPMd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-TSCd_LDADD += libbitcoin_wallet.a
+GLPMd_LDADD += libbitcoin_wallet.a
 endif
-TSCd_SOURCES = TSCd.cpp
+GLPMd_SOURCES = GLPMd.cpp
 #
 
 if TARGET_WINDOWS
-TSCd_SOURCES += TSCd-res.rc
+GLPMd_SOURCES += GLPMd-res.rc
 endif
 
-TSCd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-TSCd_CPPFLAGS = $(BITCOIN_INCLUDES)
-TSCd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+GLPMd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+GLPMd_CPPFLAGS = $(BITCOIN_INCLUDES)
+GLPMd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
-# TSC-cli binary #
-TSC_cli_LDADD = \
+# GLPM-cli binary #
+GLPM_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
   $(BOOST_LIBS) \
@@ -465,14 +465,14 @@ TSC_cli_LDADD = \
   $(CRYPTO_LIBS) \
   $(EVENT_LIBS)
 
-TSC_cli_SOURCES = \
-  TSC-cli.cpp
+GLPM_cli_SOURCES = \
+  GLPM-cli.cpp
 
-TSC_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+GLPM_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
 #
 
-# TSC-tx binary #
-TSC_tx_LDADD = \
+# GLPM-tx binary #
+GLPM_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -482,15 +482,15 @@ TSC_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-TSC_tx_SOURCES = TSC-tx.cpp
-TSC_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+GLPM_tx_SOURCES = GLPM-tx.cpp
+GLPM_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
-TSC_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+GLPM_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-TSC_cli_SOURCES += TSC-cli-res.rc
+GLPM_cli_SOURCES += GLPM-cli-res.rc
 endif
-TSC_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+GLPM_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h

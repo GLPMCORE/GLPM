@@ -148,8 +148,8 @@
         <translation>Czy na pewno chcesz zakodować portfel?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TSC&lt;/b&gt;!</source>
-        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE TSC!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLPM&lt;/b&gt;!</source>
+        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE GLPM!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -227,8 +227,8 @@
         <translation>Zakodowany klucz:</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this TSC address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres TSC jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this GLPM address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres GLPM jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -518,16 +518,16 @@
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <source>TSC Core</source>
-        <translation>&amp;Rdzeń TSC</translation>
+        <source>GLPM Core</source>
+        <translation>&amp;Rdzeń GLPM</translation>
     </message>
     <message>
-        <source>Send coins to a TSC address</source>
-        <translation>Wyślij monety do adresu TSC</translation>
+        <source>Send coins to a GLPM address</source>
+        <translation>Wyślij monety do adresu GLPM</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and TSC: URIs)</source>
-        <translation>Zarządaj płatności (generuje kod QR i TSC:URI)</translation>
+        <source>Request payments (generates QR codes and GLPM: URIs)</source>
+        <translation>Zarządaj płatności (generuje kod QR i GLPM:URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -538,24 +538,24 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>&amp;About TSC Core</source>
+        <source>&amp;About GLPM Core</source>
         <translation>&amp;O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about TSC Core</source>
+        <source>Show information about GLPM Core</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Modify configuration options for TSC</source>
-        <translation>Modyfikuj opcje konfiguracji TSC</translation>
+        <source>Modify configuration options for GLPM</source>
+        <translation>Modyfikuj opcje konfiguracji GLPM</translation>
     </message>
     <message>
-        <source>Sign messages with your TSC addresses to prove you own them</source>
-        <translation>Zatwierdź wiadomość z twoimi adresami TSC, by udowodnić, że jesteś w ich posiadaniu</translation>
+        <source>Sign messages with your GLPM addresses to prove you own them</source>
+        <translation>Zatwierdź wiadomość z twoimi adresami GLPM, by udowodnić, że jesteś w ich posiadaniu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified TSC addresses</source>
-        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu TSC</translation>
+        <source>Verify messages to ensure they were signed with specified GLPM addresses</source>
+        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu GLPM</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -582,8 +582,8 @@
         <translation>Otwórz &amp;Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a TSC: URI or payment request</source>
-        <translation>OtwórzTSCX: URI i żądanie zapłaty</translation>
+        <source>Open a GLPM: URI or payment request</source>
+        <translation>OtwórzGLPMX: URI i żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -594,12 +594,12 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the TSC Core help message to get a list with possible TSC command-line options</source>
-        <translation>Pokaż wiadomość pomocy rdzenia TSC, aby dostać listę możliwych opcji TSC command-line</translation>
+        <source>Show the GLPM Core help message to get a list with possible GLPM command-line options</source>
+        <translation>Pokaż wiadomość pomocy rdzenia GLPM, aby dostać listę możliwych opcji GLPM command-line</translation>
     </message>
     <message>
-        <source>TSC Core client</source>
-        <translation>Rdzeń TSC klient</translation>
+        <source>GLPM Core client</source>
+        <translation>Rdzeń GLPM klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -912,8 +912,8 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>TSC Core</source>
-        <translation>&amp;Rdzeń TSC</translation>
+        <source>GLPM Core</source>
+        <translation>&amp;Rdzeń GLPM</translation>
     </message>
     </context>
 <context>
@@ -927,8 +927,8 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>TSC Core</source>
-        <translation>&amp;Rdzeń TSC</translation>
+        <source>GLPM Core</source>
+        <translation>&amp;Rdzeń GLPM</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1188,12 +1188,12 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Zezwól na przychodzące połączenia</translation>
     </message>
     <message>
-        <source>Automatically start TSC after logging in to the system.</source>
-        <translation>Automatycznie uruchom TSC po zalogowaniu do systemu</translation>
+        <source>Automatically start GLPM after logging in to the system.</source>
+        <translation>Automatycznie uruchom GLPM po zalogowaniu do systemu</translation>
     </message>
     <message>
-        <source>&amp;Start TSC on system login</source>
-        <translation>&amp;Uruchom TSC podczas logowania do systemu</translation>
+        <source>&amp;Start GLPM on system login</source>
+        <translation>&amp;Uruchom GLPM podczas logowania do systemu</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1212,18 +1212,18 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>&amp;Sieć</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting TSC.</source>
-        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie TSC</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting GLPM.</source>
+        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie GLPM</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/TSC-project/TSC-project-translations</source>
+https://www.transifex.com/GLPM-project/GLPM-project-translations</source>
         <translation>Brakuje języka bądź nieukończona pełnego tłumaczenia? Pomóż w tłumaczeniu tutaj:
-https://www.transifex.com/TSC-project/TSC-project-translations </translation>
+https://www.transifex.com/GLPM-project/GLPM-project-translations </translation>
     </message>
     <message>
-        <source>Connect to the TSC network through a SOCKS5 proxy.</source>
-        <translation>Połącz z siecią TSC poprzez SOCKS5 proxy.</translation>
+        <source>Connect to the GLPM network through a SOCKS5 proxy.</source>
+        <translation>Połącz z siecią GLPM poprzez SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1461,8 +1461,8 @@ https://www.transifex.com/TSC-project/TSC-project-translations </translation>
         <translation>Liczba</translation>
     </message>
     <message>
-        <source>Enter a TSC address (e.g. %1)</source>
-        <translation>Wprowadź adres TSC (np. %1)</translation>
+        <source>Enter a GLPM address (e.g. %1)</source>
+        <translation>Wprowadź adres GLPM (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1900,8 +1900,8 @@ https://www.transifex.com/TSC-project/TSC-project-translations </translation>
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this TSC address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres TSC jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this GLPM address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres GLPM jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1935,8 +1935,8 @@ https://www.transifex.com/TSC-project/TSC-project-translations </translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>TSC Core</source>
-        <translation>&amp;Rdzeń TSC</translation>
+        <source>GLPM Core</source>
+        <translation>&amp;Rdzeń GLPM</translation>
     </message>
     </context>
 <context>
@@ -2034,7 +2034,7 @@ https://www.transifex.com/TSC-project/TSC-project-translations </translation>
     </message>
     </context>
 <context>
-    <name>TSC-core</name>
+    <name>GLPM-core</name>
     <message>
         <source>Error</source>
         <translation>Błąd</translation>

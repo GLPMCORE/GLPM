@@ -62,12 +62,12 @@
         <translation>Prijímacia adresa</translation>
     </message>
     <message>
-        <source>These are your TSC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto sú vaše TSC adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
+        <source>These are your GLPM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto sú vaše GLPM adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
     </message>
     <message>
-        <source>These are your TSC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto sú vaše TSC adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
+        <source>These are your GLPM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto sú vaše GLPM adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>TSC will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TSCs from being stolen by malware infecting your computer.</source>
-        <translation>TSC sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše TSC pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
+        <source>GLPM will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GLPMs from being stolen by malware infecting your computer.</source>
+        <translation>GLPM sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše GLPM pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Naozaj chcete zašifrovať svoju peňaženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TSC&lt;/b&gt;!</source>
-        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY TSC &lt;/ b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLPM&lt;/b&gt;!</source>
+        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY GLPM &lt;/ b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>BIP 38 Šifrovanie</translation>
     </message>
     <message>
-        <source>Enter a TSC Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadajte adresu TSC, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
+        <source>Enter a GLPM Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Zadajte adresu GLPM, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>The TSC address to sign the message with</source>
-        <translation>Adresa TSC, ktorou chcete správu podpísať</translation>
+        <source>The GLPM address to sign the message with</source>
+        <translation>Adresa GLPM, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this TSC address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto TSC adresy</translation>
+        <source>Sign the message to prove you own this GLPM address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto GLPM adresy</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Zadajte súkromný kľúč zašifrovaný BIP 38. Zadajte prístupovú frázu do stredného poľa. Kliknite na Dešifrovať kľúč, ak chcete vypočítať privátny kľúč. Po dešifrovaní kľúča pridáte do peňaženky tento súkromný kľúč kliknutím na položku 'Importovať adresu'.</translation>
     </message>
     <message>
-        <source>The TSC address the message was signed with</source>
-        <translation>TSC adresa, ktorou bola správa podpísaná</translation>
+        <source>The GLPM address the message was signed with</source>
+        <translation>GLPM adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified TSC address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou TSC adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified GLPM address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou GLPM adresou</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,16 +598,16 @@
         <translation>Panel nástrojov Záložky</translation>
     </message>
     <message>
-        <source>TSC Core</source>
-        <translation>TSC Core</translation>
+        <source>GLPM Core</source>
+        <translation>GLPM Core</translation>
     </message>
     <message>
-        <source>Send coins to a TSC address</source>
-        <translation>Odoslať mince na adresu TSC</translation>
+        <source>Send coins to a GLPM address</source>
+        <translation>Odoslať mince na adresu GLPM</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and TSC: URIs)</source>
-        <translation>Vyžiadať platby (generuje QR kódy a TSC: identifikátory URI)</translation>
+        <source>Request payments (generates QR codes and GLPM: URIs)</source>
+        <translation>Vyžiadať platby (generuje QR kódy a GLPM: identifikátory URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -618,24 +618,24 @@
         <translation>Prezrieť masternody</translation>
     </message>
     <message>
-        <source>&amp;About TSC Core</source>
-        <translation>O TSC Core</translation>
+        <source>&amp;About GLPM Core</source>
+        <translation>O GLPM Core</translation>
     </message>
     <message>
-        <source>Show information about TSC Core</source>
-        <translation>Zobraziť informácie o TSC Core</translation>
+        <source>Show information about GLPM Core</source>
+        <translation>Zobraziť informácie o GLPM Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for TSC</source>
-        <translation>Zmeňte možnosti konfigurácie pre TSC</translation>
+        <source>Modify configuration options for GLPM</source>
+        <translation>Zmeňte možnosti konfigurácie pre GLPM</translation>
     </message>
     <message>
-        <source>Sign messages with your TSC addresses to prove you own them</source>
-        <translation>Podpíšte správy pomocou adresy TSC, aby ste preukázali, že ich vlastníte</translation>
+        <source>Sign messages with your GLPM addresses to prove you own them</source>
+        <translation>Podpíšte správy pomocou adresy GLPM, aby ste preukázali, že ich vlastníte</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified TSC addresses</source>
-        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými TSC adresami</translation>
+        <source>Verify messages to ensure they were signed with specified GLPM addresses</source>
+        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými GLPM adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Otvoriť konfiguračný súbor masternodu</translation>
     </message>
     <message>
-        <source>Open a TSC: URI or payment request</source>
-        <translation>Otvorte TSC: URI alebo žiadosť o platbu</translation>
+        <source>Open a GLPM: URI or payment request</source>
+        <translation>Otvorte GLPM: URI alebo žiadosť o platbu</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Okno blockchain prehliadača</translation>
     </message>
     <message>
-        <source>Show the TSC Core help message to get a list with possible TSC command-line options</source>
-        <translation>Zobraziť pomocnú správu programu TSC Core a získajte zoznam možností príkazového riadka TSC</translation>
+        <source>Show the GLPM Core help message to get a list with possible GLPM command-line options</source>
+        <translation>Zobraziť pomocnú správu programu GLPM Core a získajte zoznam možností príkazového riadka GLPM</translation>
     </message>
     <message>
-        <source>TSC Core client</source>
-        <translation>TSC Core klient</translation>
+        <source>GLPM Core client</source>
+        <translation>GLPM Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -813,8 +813,8 @@ MultiSend: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (TSC2.conf).</source>
-        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (TSC2.conf) nastaviť txindex = 1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (GLPM2.conf).</source>
+        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (GLPM2.conf) nastaviť txindex = 1.</translation>
     </message>
 </context>
 <context>
@@ -904,15 +904,15 @@ MultiSend: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>TSC Core</source>
-        <translation>TSC Core</translation>
+        <source>GLPM Core</source>
+        <translation>GLPM Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>TSC Core</source>
-        <translation>TSC Core</translation>
+        <source>GLPM Core</source>
+        <translation>GLPM Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1136,8 +1136,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The TSC address to sign the message with</source>
-        <translation>Adresa TSC, ktorou chcete správu podpísať</translation>
+        <source>The GLPM address to sign the message with</source>
+        <translation>Adresa GLPM, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1160,16 +1160,16 @@ MultiSend: %1</translation>
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this TSC address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto TSC adresy</translation>
+        <source>Sign the message to prove you own this GLPM address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto GLPM adresy</translation>
     </message>
     <message>
-        <source>The TSC address the message was signed with</source>
-        <translation>TSC adresa, ktorou bola správa podpísaná</translation>
+        <source>The GLPM address the message was signed with</source>
+        <translation>GLPM adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified TSC address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou TSC adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified GLPM address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou GLPM adresou</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1207,8 +1207,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>TSC Core</source>
-        <translation>TSC Core</translation>
+        <source>GLPM Core</source>
+        <translation>GLPM Core</translation>
     </message>
     </context>
 <context>
@@ -1306,7 +1306,7 @@ MultiSend: %1</translation>
     <name>ZPhrControlDialog</name>
     </context>
 <context>
-    <name>TSC-core</name>
+    <name>GLPM-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

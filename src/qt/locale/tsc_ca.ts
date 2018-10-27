@@ -62,12 +62,12 @@
         <translation>Adreces de recepció</translation>
     </message>
     <message>
-        <source>These are your TSC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Aquestes són les teves adreces TSC per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
+        <source>These are your GLPM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Aquestes són les teves adreces GLPM per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
     </message>
     <message>
-        <source>These are your TSC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Aquestes són les teves adreces TSC per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
+        <source>These are your GLPM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Aquestes són les teves adreces GLPM per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,16 +168,16 @@
         <translation>Confirma l'encriptació del moneder</translation>
     </message>
     <message>
-        <source>TSC will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TSCs from being stolen by malware infecting your computer.</source>
-        <translation>TSC es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus TSC de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
+        <source>GLPM will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GLPMs from being stolen by malware infecting your computer.</source>
+        <translation>GLPM es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus GLPM de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Estàs segur que vols encriptar el moneder?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TSC&lt;/b&gt;!</source>
-        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES TSCS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLPM&lt;/b&gt;!</source>
+        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES GLPMS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -418,12 +418,12 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>TSC Core</source>
-        <translation>TSC Core</translation>
+        <source>GLPM Core</source>
+        <translation>GLPM Core</translation>
     </message>
     <message>
-        <source>Send coins to a TSC address</source>
-        <translation>Envia monedes a una adreça TSC</translation>
+        <source>Send coins to a GLPM address</source>
+        <translation>Envia monedes a una adreça GLPM</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -434,8 +434,8 @@
         <translation>&amp;Masternodes</translation>
     </message>
     <message>
-        <source>&amp;About TSC Core</source>
-        <translation>&amp;Sobre TSC Core</translation>
+        <source>&amp;About GLPM Core</source>
+        <translation>&amp;Sobre GLPM Core</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -458,12 +458,12 @@
         <translation>Obre el fitxer de configuració del Masternode</translation>
     </message>
     <message>
-        <source>TSC Core client</source>
-        <translation>Client TSC core</translation>
+        <source>GLPM Core client</source>
+        <translation>Client GLPM core</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to TSC network</source>
-        <translation><numerusform>%n connexió activa a la xarxa TSC</numerusform><numerusform>%n connexions actives a la xarxa TSC</numerusform></translation>
+        <source>%n active connection(s) to GLPM network</source>
+        <translation><numerusform>%n connexió activa a la xarxa GLPM</numerusform><numerusform>%n connexions actives a la xarxa GLPM</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -814,8 +814,8 @@
         <translation>Edita l'adreça d'enviament</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid TSC address.</source>
-        <translation>L'adreça introduïda "%1" no és una adreça TSC vàlida.</translation>
+        <source>The entered address "%1" is not a valid GLPM address.</source>
+        <translation>L'adreça introduïda "%1" no és una adreça GLPM vàlida.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -860,16 +860,16 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>TSC Core</source>
-        <translation>TSC Core</translation>
+        <source>GLPM Core</source>
+        <translation>GLPM Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About TSC Core</source>
-        <translation>Sobre TSC Core</translation>
+        <source>About GLPM Core</source>
+        <translation>Sobre GLPM Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -915,12 +915,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to TSC Core.</source>
-        <translation>Benvingut a TSC Core.</translation>
+        <source>Welcome to GLPM Core.</source>
+        <translation>Benvingut a GLPM Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where TSC Core will store its data.</source>
-        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del TSC Core.</translation>
+        <source>As this is the first time the program is launched, you can choose where GLPM Core will store its data.</source>
+        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del GLPM Core.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -931,8 +931,8 @@
         <translation>Usar una carpeta de dades personalitzada:</translation>
     </message>
     <message>
-        <source>TSC Core</source>
-        <translation>TSC Core</translation>
+        <source>GLPM Core</source>
+        <translation>GLPM Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1142,24 +1142,24 @@
         <translation>Si us plau, selecciona un nivell de privacitat.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 TSC</source>
-        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 10000 TSC</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 GLPM</source>
+        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 10000 GLPM</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 TSC</source>
-        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 10000 TSC</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 GLPM</source>
+        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 10000 GLPM</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Utilitza 16 masternodes diferents</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 TSC to anonymize 10000 TSC</source>
-        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 TSC per anonimitzar 10000 TSC</translation>
+        <source>This option is the quickest and will cost about ~0.025 GLPM to anonymize 10000 GLPM</source>
+        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 GLPM per anonimitzar 10000 GLPM</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 TSC to anonymize 10000 TSC</source>
-        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 TSC per anonimitzar 10000 TSC</translation>
+        <source>This option is moderately fast and will cost about 0.05 GLPM to anonymize 10000 GLPM</source>
+        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 GLPM per anonimitzar 10000 GLPM</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1208,8 +1208,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start TSC after logging in to the system.</source>
-        <translation>Inicia TSC automàticament després d'identificar-te en el sistema.</translation>
+        <source>Automatically start GLPM after logging in to the system.</source>
+        <translation>Inicia GLPM automàticament després d'identificar-te en el sistema.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1271,12 +1271,12 @@
         <translation>Total:</translation>
     </message>
     <message>
-        <source>TSC:</source>
-        <translation>TSC:</translation>
+        <source>GLPM:</source>
+        <translation>GLPM:</translation>
     </message>
     <message>
-        <source>zTSC:</source>
-        <translation>zTSC:</translation>
+        <source>zGLPM:</source>
+        <translation>zGLPM:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -1304,20 +1304,20 @@
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>Zerocoin TSC (zTSC)</source>
-        <translation>Zerocoin TSC (zTSC)</translation>
+        <source>Zerocoin GLPM (zGLPM)</source>
+        <translation>Zerocoin GLPM (zGLPM)</translation>
     </message>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zTSC</source>
-        <translation>zTSC</translation>
+        <source>zGLPM</source>
+        <translation>zGLPM</translation>
     </message>
     <message>
-        <source>0.000 000 00 TSC</source>
-        <translation>0.000 000 00 TSC</translation>
+        <source>0.000 000 00 GLPM</source>
+        <translation>0.000 000 00 GLPM</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1332,8 +1332,8 @@
         <translation>Import:</translation>
     </message>
     <message>
-        <source>0 zTSC</source>
-        <translation>0 zTSC</translation>
+        <source>0 zGLPM</source>
+        <translation>0 zGLPM</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1719,8 +1719,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>TSC Core is shutting down...</source>
-        <translation>TSC Core s'està tancant...</translation>
+        <source>GLPM Core is shutting down...</source>
+        <translation>GLPM Core s'està tancant...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1785,8 +1785,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>TSC Core</source>
-        <translation>TSC Core</translation>
+        <source>GLPM Core</source>
+        <translation>GLPM Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1984,7 +1984,7 @@
     </message>
     </context>
 <context>
-    <name>TSC-core</name>
+    <name>GLPM-core</name>
     <message>
         <source>Can't mix while sync in progress.</source>
         <translation>No es pot mesclar mentre s'està sincronitzant.</translation>

@@ -10,10 +10,10 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both TSCd and TSC-qt, to make it harder for attackers to
+ * for both GLPMd and GLPM-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("TSC Core");
+const std::string CLIENT_NAME("GLPM Core");
 
 /**
  * Client version number

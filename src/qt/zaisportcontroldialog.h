@@ -1,10 +1,10 @@
 // Copyright (c) 2017 The PIVX developers
-// Copyright (c) 2017-2018 The TSC developers
+// Copyright (c) 2017-2018 The GLPM developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef ZTSCCONTROLDIALOG_H
-#define ZTSCCONTROLDIALOG_H
+#ifndef ZGLPMCONTROLDIALOG_H
+#define ZGLPMCONTROLDIALOG_H
 
 #include <QDialog>
 #include <QTreeWidgetItem>
@@ -15,16 +15,16 @@ class CZerocoinMint;
 class WalletModel;
 
 namespace Ui {
-class ZTSCControlDialog;
+class ZGLPMControlDialog;
 }
 
-class ZTSCControlDialog : public QDialog
+class ZGLPMControlDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit ZTSCControlDialog(QWidget *parent);
-    ~ZTSCControlDialog();
+    explicit ZGLPMControlDialog(QWidget *parent);
+    ~ZGLPMControlDialog();
 
     void setModel(WalletModel* model);
 
@@ -33,7 +33,7 @@ public:
     static std::vector<CZerocoinMint> GetSelectedMints();
 
 private:
-    Ui::ZTSCControlDialog *ui;
+    Ui::ZGLPMControlDialog *ui;
     WalletModel* model;
     PrivacyDialog* privacyDialog;
 
@@ -53,4 +53,4 @@ private slots:
     void ButtonAllClicked();
 };
 
-#endif // ZTSCCONTROLDIALOG_H
+#endif // ZGLPMCONTROLDIALOG_H

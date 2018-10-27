@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between TSC-cli and TSCd)
- * of a given instance of the TSC system.
+ * CBaseChainParams defines the base parameters (shared between GLPM-cli and GLPMd)
+ * of a given instance of the GLPM system.
  */
 class CBaseChainParams
 {

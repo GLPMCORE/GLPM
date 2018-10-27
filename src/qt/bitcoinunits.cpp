@@ -19,18 +19,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(TSC);
-    unitlist.append(mTSC);
-    unitlist.append(uTSC);
+    unitlist.append(GLPM);
+    unitlist.append(mGLPM);
+    unitlist.append(uGLPM);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case TSC:
-    case mTSC:
-    case uTSC:
+    case GLPM:
+    case mGLPM:
+    case uGLPM:
         return true;
     default:
         return false;
@@ -40,12 +40,12 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case TSC:
-        return QString("TSC");
-    case mTSC:
-        return QString("mTSC");
-    case uTSC:
-        return QString::fromUtf8("uTSC");
+    case GLPM:
+        return QString("GLPM");
+    case mGLPM:
+        return QString("mGLPM");
+    case uGLPM:
+        return QString::fromUtf8("uGLPM");
     default:
         return QString("???");
     }
@@ -55,23 +55,23 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case TSC:
-            return QString("TSC");
-        case mTSC:
-            return QString("mTSC");
-        case uTSC:
-            return QString::fromUtf8("μTSC");
+        case GLPM:
+            return QString("GLPM");
+        case mGLPM:
+            return QString("mGLPM");
+        case uGLPM:
+            return QString::fromUtf8("μGLPM");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case TSC:
-            return QString("tTSC");
-        case mTSC:
-            return QString("mtTSC");
-        case uTSC:
-            return QString::fromUtf8("μtTSC");
+        case GLPM:
+            return QString("tGLPM");
+        case mGLPM:
+            return QString("mtGLPM");
+        case uGLPM:
+            return QString::fromUtf8("μtGLPM");
         default:
             return QString("???");
         }
@@ -82,23 +82,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case TSC:
-            return QString("TSC");
-        case mTSC:
-            return QString("Milli-TSC (1 / 1" THIN_SP_UTF8 "000)");
-        case uTSC:
-            return QString("Micro-TSC (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case GLPM:
+            return QString("GLPM");
+        case mGLPM:
+            return QString("Milli-GLPM (1 / 1" THIN_SP_UTF8 "000)");
+        case uGLPM:
+            return QString("Micro-GLPM (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case TSC:
-            return QString("TestTSCs");
-        case mTSC:
-            return QString("Milli-TestTSC (1 / 1" THIN_SP_UTF8 "000)");
-        case uTSC:
-            return QString("Micro-TestTSC (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case GLPM:
+            return QString("TestGLPMs");
+        case mGLPM:
+            return QString("Milli-TestGLPM (1 / 1" THIN_SP_UTF8 "000)");
+        case uGLPM:
+            return QString("Micro-TestGLPM (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -108,11 +108,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case TSC:
+    case GLPM:
         return 100000000;
-    case mTSC:
+    case mGLPM:
         return 100000;
-    case uTSC:
+    case uGLPM:
         return 100;
     default:
         return 100000000;
@@ -122,11 +122,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case TSC:
+    case GLPM:
         return 8;
-    case mTSC:
+    case mGLPM:
         return 5;
-    case uTSC:
+    case uGLPM:
         return 2;
     default:
         return 0;

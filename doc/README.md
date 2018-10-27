@@ -1,39 +1,39 @@
-TSC Core
+GLPM Core
 =====================
 
 Setup
 ---------------------
-[TSC Core](http://TSCcoin.com) is the original TSC client and it builds the backbone of the network. However, it downloads and stores the entire history of TSC transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[GLPM Core](http://GLPMcoin.com) is the original GLPM client and it builds the backbone of the network. However, it downloads and stores the entire history of GLPM transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run TSC on your native platform.
+The following are some helpful notes on how to run GLPM on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- bin/32/TSC-qt (GUI, 32-bit) or bin/32/TSCd (headless, 32-bit)
-- bin/64/TSC-qt (GUI, 64-bit) or bin/64/TSCd (headless, 64-bit)
+- bin/32/GLPM-qt (GUI, 32-bit) or bin/32/GLPMd (headless, 32-bit)
+- bin/64/GLPM-qt (GUI, 64-bit) or bin/64/GLPMd (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run TSC-qt.exe.
+Unpack the files into a directory, and then run GLPM-qt.exe.
 
 ### OSX
 
-Drag TSC-Qt to your applications folder, and then run TSC-Qt.
+Drag GLPM-Qt to your applications folder, and then run GLPM-Qt.
 
 ### Need Help?
 
-* See the documentation at the [TSC Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
+* See the documentation at the [GLPM Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php) or on the [TSC Forum](http://TSCcoin.com/).
-* Join one of our Discord groups [TSC Discord Groups](https://discord.gg/YcnvMqt).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php) or on the [GLPM Forum](http://GLPMcoin.com/).
+* Join one of our Discord groups [GLPM Discord Groups](https://discord.gg/YcnvMqt).
 
 Building
 ---------------------
-The following are developer notes on how to build TSC on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build GLPM on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -41,7 +41,7 @@ The following are developer notes on how to build TSC on your native platform. T
 
 Development
 ---------------------
-The TSC repo's [root README](https://github.com/eastcoastcrypto/TSC/blob/master/README.md) contains relevant information on the development process and automated testing.
+The GLPM repo's [root README](https://github.com/eastcoastcrypto/GLPM/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -56,7 +56,7 @@ The TSC repo's [root README](https://github.com/eastcoastcrypto/TSC/blob/master/
 ### Resources
 
 * Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) .
-* Join the [TSC-Dev] Discord groups [TSC Discord Groups](https://discord.gg/YcnvMqt).
+* Join the [GLPM-Dev] Discord groups [GLPM Discord Groups](https://discord.gg/YcnvMqt).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

@@ -1,60 +1,60 @@
-Sample init scripts and service configuration for TSCd
+Sample init scripts and service configuration for GLPMd
 ==========================================================
 
 Sample scripts and configuration files for systemd, Upstart and OpenRC
 can be found in the contrib/init folder.
 
-    contrib/init/TSCd.service:    systemd service unit configuration
-    contrib/init/TSCd.openrc:     OpenRC compatible SysV style init script
-    contrib/init/TSCd.openrcconf: OpenRC conf.d file
-    contrib/init/TSCd.conf:       Upstart service configuration file
-    contrib/init/TSCd.init:       CentOS compatible SysV style init script
+    contrib/init/GLPMd.service:    systemd service unit configuration
+    contrib/init/GLPMd.openrc:     OpenRC compatible SysV style init script
+    contrib/init/GLPMd.openrcconf: OpenRC conf.d file
+    contrib/init/GLPMd.conf:       Upstart service configuration file
+    contrib/init/GLPMd.init:       CentOS compatible SysV style init script
 
 1. Service User
 ---------------------------------
 
-All three startup configurations assume the existence of a "TSC" user
+All three startup configurations assume the existence of a "GLPM" user
 and group.  They must be created before attempting to use these scripts.
 
 2. Configuration
 ---------------------------------
 
-At a bare minimum, TSCd requires that the rpcpassword setting be set
+At a bare minimum, GLPMd requires that the rpcpassword setting be set
 when running as a daemon.  If the configuration file does not exist or this
-setting is not set, TSCd will shutdown promptly after startup.
+setting is not set, GLPMd will shutdown promptly after startup.
 
 This password does not have to be remembered or typed as it is mostly used
-as a fixed token that TSCd and client programs read from the configuration
+as a fixed token that GLPMd and client programs read from the configuration
 file, however it is recommended that a strong and secure password be used
 as this password is security critical to securing the wallet should the
 wallet be enabled.
 
-If TSCd is run with "-daemon" flag, and no rpcpassword is set, it will
+If GLPMd is run with "-daemon" flag, and no rpcpassword is set, it will
 print a randomly generated suitable password to stderr.  You can also
 generate one from the shell yourself like this:
 
 bash -c 'tr -dc a-zA-Z0-9 < /dev/urandom | head -c32 && echo'
 
-Once you have a password in hand, set rpcpassword= in /etc/TSC/TSC.conf
+Once you have a password in hand, set rpcpassword= in /etc/GLPM/GLPM.conf
 
 For an example configuration file that describes the configuration settings,
-see contrib/debian/examples/TSC.conf.
+see contrib/debian/examples/GLPM.conf.
 
 3. Paths
 ---------------------------------
 
 All three configurations assume several paths that might need to be adjusted.
 
-Binary:              /usr/bin/TSCd
-Configuration file:  /etc/TSC/TSC.conf
-Data directory:      /var/lib/TSCd
-PID file:            /var/run/TSCd/TSCd.pid (OpenRC and Upstart)
-                     /var/lib/TSCd/TSCd.pid (systemd)
+Binary:              /usr/bin/GLPMd
+Configuration file:  /etc/GLPM/GLPM.conf
+Data directory:      /var/lib/GLPMd
+PID file:            /var/run/GLPMd/GLPMd.pid (OpenRC and Upstart)
+                     /var/lib/GLPMd/GLPMd.pid (systemd)
 
 The configuration file, PID directory (if applicable) and data directory
-should all be owned by the TSC user and group.  It is advised for security
+should all be owned by the GLPM user and group.  It is advised for security
 reasons to make the configuration file and data directory only readable by the
-TSC user and group.  Access to TSC-cli and other TSCd rpc clients
+GLPM user and group.  Access to GLPM-cli and other GLPMd rpc clients
 can then be controlled by group membership.
 
 4. Installing Service Configuration
@@ -66,19 +66,19 @@ Installing this .service file consists on just copying it to
 /usr/lib/systemd/system directory, followed by the command
 "systemctl daemon-reload" in order to update running systemd configuration.
 
-To test, run "systemctl start TSCd" and to enable for system startup run
-"systemctl enable TSCd"
+To test, run "systemctl start GLPMd" and to enable for system startup run
+"systemctl enable GLPMd"
 
 4b) OpenRC
 
-Rename TSCd.openrc to TSCd and drop it in /etc/init.d.  Double
+Rename GLPMd.openrc to GLPMd and drop it in /etc/init.d.  Double
 check ownership and permissions and make it executable.  Test it with
-"/etc/init.d/TSCd start" and configure it to run on startup with
-"rc-update add TSCd"
+"/etc/init.d/GLPMd start" and configure it to run on startup with
+"rc-update add GLPMd"
 
 4c) Upstart (for Debian/Ubuntu based distributions)
 
-Drop TSCd.conf in /etc/init.  Test by running "service TSCd start"
+Drop GLPMd.conf in /etc/init.  Test by running "service GLPMd start"
 it will automatically start on reboot.
 
 NOTE: This script is incompatible with CentOS 5 and Amazon Linux 2014 as they
@@ -86,11 +86,11 @@ use old versions of Upstart and do not supply the start-stop-daemon uitility.
 
 4d) CentOS
 
-Copy TSCd.init to /etc/init.d/TSCd. Test by running "service TSCd start".
+Copy GLPMd.init to /etc/init.d/GLPMd. Test by running "service GLPMd start".
 
-Using this script, you can adjust the path and flags to the TSCd program by
-setting the TSCD and FLAGS environment variables in the file
-/etc/sysconfig/TSCd. You can also use the DAEMONOPTS environment variable here.
+Using this script, you can adjust the path and flags to the GLPMd program by
+setting the GLPMD and FLAGS environment variables in the file
+/etc/sysconfig/GLPMd. You can also use the DAEMONOPTS environment variable here.
 
 5. Auto-respawn
 -----------------------------------

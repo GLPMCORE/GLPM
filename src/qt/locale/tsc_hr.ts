@@ -115,8 +115,8 @@
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>The TSC address the message was signed with</source>
-        <translation>TSC adresa s kojom je potpisana poruka</translation>
+        <source>The GLPM address the message was signed with</source>
+        <translation>GLPM adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
         <source>Allowed: 0-9,a-z,A-Z,</source>
@@ -150,8 +150,8 @@
         <translation>Otvori konfiguracijsku datoteku</translation>
     </message>
     <message>
-        <source>TSC Core</source>
-        <translation>TSC Core</translation>
+        <source>GLPM Core</source>
+        <translation>GLPM Core</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -162,8 +162,8 @@
         <translation>&amp;BIP38 alat</translation>
     </message>
     <message>
-        <source>TSC Core client</source>
-        <translation>TSC Core klijent</translation>
+        <source>GLPM Core client</source>
+        <translation>GLPM Core klijent</translation>
     </message>
     <message>
         <source>Error</source>
@@ -256,15 +256,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>TSC Core</source>
-        <translation>TSC Core</translation>
+        <source>GLPM Core</source>
+        <translation>GLPM Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>TSC Core</source>
-        <translation>TSC Core</translation>
+        <source>GLPM Core</source>
+        <translation>GLPM Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -535,8 +535,8 @@
         <translation>ne</translation>
     </message>
     <message>
-        <source>0 TSC</source>
-        <translation>0 TSC</translation>
+        <source>0 GLPM</source>
+        <translation>0 GLPM</translation>
     </message>
     <message>
         <source>Confirmation time:</source>
@@ -597,8 +597,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>TSC Core is shutting down...</source>
-        <translation>TSC Core se gasi...</translation>
+        <source>GLPM Core is shutting down...</source>
+        <translation>GLPM Core se gasi...</translation>
     </message>
     </context>
 <context>
@@ -620,8 +620,8 @@
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>The TSC address the message was signed with</source>
-        <translation>TSC adresa s kojom je potpisana poruka</translation>
+        <source>The GLPM address the message was signed with</source>
+        <translation>GLPM adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
         <source>Message signed.</source>
@@ -635,8 +635,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>TSC Core</source>
-        <translation>TSC Core</translation>
+        <source>GLPM Core</source>
+        <translation>GLPM Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -790,7 +790,7 @@
     </message>
     </context>
 <context>
-    <name>TSC-core</name>
+    <name>GLPM-core</name>
     <message>
         <source>Error</source>
         <translation>Greška</translation>

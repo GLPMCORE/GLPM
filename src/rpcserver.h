@@ -96,7 +96,7 @@ public:
 };
 
 /**
- * TSC RPC command dispatcher.
+ * GLPM RPC command dispatcher.
  */
 class CRPCTable
 {

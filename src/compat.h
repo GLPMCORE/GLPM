@@ -7,7 +7,7 @@
 #define BITCOIN_COMPAT_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/TSC-config.h"
+#include "config/GLPM-config.h"
 #endif
 
 #ifdef WIN32

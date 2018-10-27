@@ -62,12 +62,12 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your TSC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat sinun TSC osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
+        <source>These are your GLPM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat sinun GLPM osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your TSC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat sinun TSC osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
+        <source>These are your GLPM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat sinun GLPM osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>TSC will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TSCs from being stolen by malware infecting your computer.</source>
-        <translation>TSC sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella TSCien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>GLPM will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GLPMs from being stolen by malware infecting your computer.</source>
+        <translation>GLPM sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella GLPMien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Oletko varma että tahdot salata lompakkosi?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TSC&lt;/b&gt;!</source>
-        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki TSCisi&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLPM&lt;/b&gt;!</source>
+        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki GLPMisi&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -235,8 +235,8 @@
         <translation>&amp;BIP 38 Salaus</translation>
     </message>
     <message>
-        <source>Enter a TSC Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Syötä TSC osoite, jonnka tahtoisit salata käyttäen BIP 38.
+        <source>Enter a GLPM Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Syötä GLPM osoite, jonnka tahtoisit salata käyttäen BIP 38.
 Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityisavaimen.</translation>
     </message>
     <message>
@@ -244,8 +244,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Osoite:</translation>
     </message>
     <message>
-        <source>The TSC address to sign the message with</source>
-        <translation>TSC osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The GLPM address to sign the message with</source>
+        <translation>GLPM osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -276,8 +276,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this TSC address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän TSC osoitteen</translation>
+        <source>Sign the message to prove you own this GLPM address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän GLPM osoitteen</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -300,12 +300,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Syötä BIP 38 salattu yksityisavain. Syötä salausavain laatikkoon. Paina Avaa Salaus tuottaaksesi yksityisavaimen. Kun avain on dekryptattu, painamalla "Import osoite" lisää tämän yksityisavaimen lompakkoon.</translation>
     </message>
     <message>
-        <source>The TSC address the message was signed with</source>
-        <translation>TSC osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The GLPM address the message was signed with</source>
+        <translation>GLPM osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified TSC address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla TSC osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified GLPM address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla GLPM osoitteella.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -591,16 +591,16 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>&amp;Apua</translation>
     </message>
     <message>
-        <source>TSC Core</source>
-        <translation>TSC Ydin</translation>
+        <source>GLPM Core</source>
+        <translation>GLPM Ydin</translation>
     </message>
     <message>
-        <source>Send coins to a TSC address</source>
-        <translation>Lähetä kolikkoja TSC osoitteeseen</translation>
+        <source>Send coins to a GLPM address</source>
+        <translation>Lähetä kolikkoja GLPM osoitteeseen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and TSC: URIs)</source>
-        <translation>Pyydä maksuja (Generoi QR koodeja ja TSC: URIja)</translation>
+        <source>Request payments (generates QR codes and GLPM: URIs)</source>
+        <translation>Pyydä maksuja (Generoi QR koodeja ja GLPM: URIja)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -611,24 +611,24 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Selaa masternodeja</translation>
     </message>
     <message>
-        <source>&amp;About TSC Core</source>
-        <translation>TSC Core &amp;ytimestä</translation>
+        <source>&amp;About GLPM Core</source>
+        <translation>GLPM Core &amp;ytimestä</translation>
     </message>
     <message>
-        <source>Show information about TSC Core</source>
-        <translation>Näytä tietoja TSC Ytimestä</translation>
+        <source>Show information about GLPM Core</source>
+        <translation>Näytä tietoja GLPM Ytimestä</translation>
     </message>
     <message>
-        <source>Modify configuration options for TSC</source>
-        <translation>Muokkaa konfiguraatio vaihtoehtoja TSC:lle</translation>
+        <source>Modify configuration options for GLPM</source>
+        <translation>Muokkaa konfiguraatio vaihtoehtoja GLPM:lle</translation>
     </message>
     <message>
-        <source>Sign messages with your TSC addresses to prove you own them</source>
+        <source>Sign messages with your GLPM addresses to prove you own them</source>
         <translation>Allekirjoita viestejä todistaaksesi, että omistat ne.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified TSC addresses</source>
-        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä TSC osoiteella.</translation>
+        <source>Verify messages to ensure they were signed with specified GLPM addresses</source>
+        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä GLPM osoiteella.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -659,8 +659,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Avaa Masternode konfiguraatiotiedosto</translation>
     </message>
     <message>
-        <source>Open a TSC: URI or payment request</source>
-        <translation>Avaa TSC: URI tai pyydä maksua</translation>
+        <source>Open a GLPM: URI or payment request</source>
+        <translation>Avaa GLPM: URI tai pyydä maksua</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -671,12 +671,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Lohkon tutkija näkymä</translation>
     </message>
     <message>
-        <source>Show the TSC Core help message to get a list with possible TSC command-line options</source>
-        <translation>Näytä TSC Ydin apuviesti saadaksesi lista mahdollisista TSC komentolinja komennoista.</translation>
+        <source>Show the GLPM Core help message to get a list with possible GLPM command-line options</source>
+        <translation>Näytä GLPM Ydin apuviesti saadaksesi lista mahdollisista GLPM komentolinja komennoista.</translation>
     </message>
     <message>
-        <source>TSC Core client</source>
-        <translation>TSC Ydin asiakasohjelma</translation>
+        <source>GLPM Core client</source>
+        <translation>GLPM Ydin asiakasohjelma</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -934,8 +934,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>TSC Core</source>
-        <translation>TSC Ydin</translation>
+        <source>GLPM Core</source>
+        <translation>GLPM Ydin</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -953,12 +953,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to TSC Core.</source>
-        <translation>Tervetuloa TSC Ytimeen.</translation>
+        <source>Welcome to GLPM Core.</source>
+        <translation>Tervetuloa GLPM Ytimeen.</translation>
     </message>
     <message>
-        <source>TSC Core</source>
-        <translation>TSC Ydin</translation>
+        <source>GLPM Core</source>
+        <translation>GLPM Ydin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1135,32 +1135,32 @@ Please check the address and try again.</source>
         <translation>Valitse yksityisyyden taso.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 TSC</source>
-        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 TSC</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 GLPM</source>
+        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 GLPM</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 TSC</source>
-        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 TSC</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 GLPM</source>
+        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 GLPM</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Käytä 16 erillistä masternodea</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 TSC to anonymize 10000 TSC</source>
-        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 TSC anonymoidaksesi 10000 TSC</translation>
+        <source>This option is the quickest and will cost about ~0.025 GLPM to anonymize 10000 GLPM</source>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 GLPM anonymoidaksesi 10000 GLPM</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 TSC to anonymize 10000 TSC</source>
-        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 TSC anonymoidaksesi 10000 TSC</translation>
+        <source>This option is moderately fast and will cost about 0.05 GLPM to anonymize 10000 GLPM</source>
+        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 GLPM anonymoidaksesi 10000 GLPM</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Tämä on hitain ja turvallisin vaihtoehto. Täydesti anonymisoiminen ei maksa mitään.</translation>
     </message>
     <message>
-        <source>0.1 TSC per 10000 TSC you anonymize.</source>
-        <translation>0.1 per 10000 TSC, jotka anonymisoit.</translation>
+        <source>0.1 GLPM per 10000 GLPM you anonymize.</source>
+        <translation>0.1 per 10000 GLPM, jotka anonymisoit.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1209,12 +1209,12 @@ Please check the address and try again.</source>
         <translation>Ekspertti</translation>
     </message>
     <message>
-        <source>Automatically start TSC after logging in to the system.</source>
-        <translation>Automaattisesti käynnistä TSC kun kirjaudut sisään.</translation>
+        <source>Automatically start GLPM after logging in to the system.</source>
+        <translation>Automaattisesti käynnistä GLPM kun kirjaudut sisään.</translation>
     </message>
     <message>
-        <source>&amp;Start TSC on system login</source>
-        <translation>&amp;Aloita TSC järjestelmän kirjautumisessa</translation>
+        <source>&amp;Start GLPM on system login</source>
+        <translation>&amp;Aloita GLPM järjestelmän kirjautumisessa</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1233,12 +1233,12 @@ Please check the address and try again.</source>
         <translation>&amp;Verkko</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting TSC.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting GLPM.</source>
         <translation>Käyttöliittymän kielen voi säätää täällä. Tämä asetus tulee voimaan uudelleenkäynnistettyäsi lompakon.</translation>
     </message>
     <message>
-        <source>Connect to the TSC network through a SOCKS5 proxy.</source>
-        <translation>Yhdistä TSC verkkoon SOCKS5 proxyn kautta</translation>
+        <source>Connect to the GLPM network through a SOCKS5 proxy.</source>
+        <translation>Yhdistä GLPM verkkoon SOCKS5 proxyn kautta</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1542,8 +1542,8 @@ Please check the address and try again.</source>
         <translation>Lohko ketju</translation>
     </message>
     <message>
-        <source>Open the TSC debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa TSC debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
+        <source>Open the GLPM debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa GLPM debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -1654,8 +1654,8 @@ Please check the address and try again.</source>
         <translation>Ulos:</translation>
     </message>
     <message>
-        <source>Welcome to the TSC RPC console.</source>
-        <translation>Tervetuloa TSC RPC konsoliin.</translation>
+        <source>Welcome to the GLPM RPC console.</source>
+        <translation>Tervetuloa GLPM RPC konsoliin.</translation>
     </message>
     <message>
         <source>never</source>
@@ -1697,12 +1697,12 @@ Please check the address and try again.</source>
         <translation>Vaihtoehtoinen nimike uudelle vastaanottavalle osoitteelle</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the TSC network.</source>
-        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana TSC verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the GLPM network.</source>
+        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana GLPM verkolle.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the TSC network.</source>
-        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana TSC  verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the GLPM network.</source>
+        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana GLPM  verkolle.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -1898,8 +1898,8 @@ Please check the address and try again.</source>
         <translation>Muutos:</translation>
     </message>
     <message>
-        <source>0 TSC</source>
-        <translation>0 TSC</translation>
+        <source>0 GLPM</source>
+        <translation>0 GLPM</translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1982,8 +1982,8 @@ Please check the address and try again.</source>
         <translation>käyttää</translation>
     </message>
     <message>
-        <source>Warning: Invalid TSC address</source>
-        <translation>Varoitus: Virheellinen TSC osoite</translation>
+        <source>Warning: Invalid GLPM address</source>
+        <translation>Varoitus: Virheellinen GLPM osoite</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -2029,8 +2029,8 @@ Please check the address and try again.</source>
         <translation>Tämä on normaali maksu.</translation>
     </message>
     <message>
-        <source>The TSC address to send the payment to</source>
-        <translation>TSC osoite johon maksu lähetetään</translation>
+        <source>The GLPM address to send the payment to</source>
+        <translation>GLPM osoite johon maksu lähetetään</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2072,8 +2072,8 @@ Please check the address and try again.</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>TSC Core is shutting down...</source>
-        <translation>TSC core sammuu...</translation>
+        <source>GLPM Core is shutting down...</source>
+        <translation>GLPM core sammuu...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2091,8 +2091,8 @@ Please check the address and try again.</source>
         <translation>Voit allekirjoittaa viestejä osoitteillasi todistaaksesi, että omistat ne. Ole varovainen ettet allekirjoita mitään kummallista, sillä kalasteluyritykset saattavat yrittää huijata sinut luovuttamaan tietoja. Allekirjoita vain täysin yksityiskohtaisia sanomia, jotka hyväksyt.</translation>
     </message>
     <message>
-        <source>The TSC address to sign the message with</source>
-        <translation>TSC osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The GLPM address to sign the message with</source>
+        <translation>GLPM osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2123,16 +2123,16 @@ Please check the address and try again.</source>
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this TSC address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän TSC osoitteen</translation>
+        <source>Sign the message to prove you own this GLPM address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän GLPM osoitteen</translation>
     </message>
     <message>
-        <source>The TSC address the message was signed with</source>
-        <translation>TSC osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The GLPM address the message was signed with</source>
+        <translation>GLPM osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified TSC address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla TSC osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified GLPM address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla GLPM osoitteella.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2214,8 +2214,8 @@ Please check the address and try again.</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>TSC Core</source>
-        <translation>TSC Ydin</translation>
+        <source>GLPM Core</source>
+        <translation>GLPM Ydin</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2230,8 +2230,8 @@ Please check the address and try again.</source>
         <translation>Dash Core kehittäjät</translation>
     </message>
     <message>
-        <source>The TSC Core developers</source>
-        <translation>TSC core kehittäjät</translation>
+        <source>The GLPM Core developers</source>
+        <translation>GLPM core kehittäjät</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2541,7 +2541,7 @@ Please check the address and try again.</source>
     </message>
     </context>
 <context>
-    <name>TSC-core</name>
+    <name>GLPM-core</name>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
         <translation>Varoitus: Verkko ei näytä olevan samaa mieltä! Jotkin mainaajat saattavat kokea ongelmia.</translation>
@@ -2591,8 +2591,8 @@ Please check the address and try again.</source>
         <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko korruptoitunut</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of TSC Core</source>
-        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version TSC Coresta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of GLPM Core</source>
+        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version GLPM Coresta</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>

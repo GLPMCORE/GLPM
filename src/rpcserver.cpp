@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 The TSC developers
+// Copyright (c) 2018 The GLPM developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -238,10 +238,10 @@ Value stop(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop TSC server.");
+            "\nStop GLPM server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "TSC server stopping";
+    return "GLPM server stopping";
 }
 
 
@@ -319,36 +319,36 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* TSC features */
-        {"TSC", "masternode", &masternode, true, true, false},
-        {"TSC", "listmasternodes", &listmasternodes, true, true, false},
-        {"TSC", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"TSC", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"TSC", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"TSC", "masternodedebug", &masternodedebug, true, true, false},
-        {"TSC", "startmasternode", &startmasternode, true, true, false},
-        {"TSC", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"TSC", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"TSC", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"TSC", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"TSC", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"TSC", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"TSC", "mnbudget", &mnbudget, true, true, false},
-        {"TSC", "preparebudget", &preparebudget, true, true, false},
-        {"TSC", "submitbudget", &submitbudget, true, true, false},
-        {"TSC", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"TSC", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"TSC", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"TSC", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"TSC", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"TSC", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"TSC", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"TSC", "checkbudgets", &checkbudgets, true, true, false},
-        {"TSC", "mnsync", &mnsync, true, true, false},
-        {"TSC", "spork", &spork, true, true, false},
-        {"TSC", "getpoolinfo", &getpoolinfo, true, true, false},
+        /* GLPM features */
+        {"GLPM", "masternode", &masternode, true, true, false},
+        {"GLPM", "listmasternodes", &listmasternodes, true, true, false},
+        {"GLPM", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"GLPM", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"GLPM", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"GLPM", "masternodedebug", &masternodedebug, true, true, false},
+        {"GLPM", "startmasternode", &startmasternode, true, true, false},
+        {"GLPM", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"GLPM", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"GLPM", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"GLPM", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"GLPM", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"GLPM", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"GLPM", "mnbudget", &mnbudget, true, true, false},
+        {"GLPM", "preparebudget", &preparebudget, true, true, false},
+        {"GLPM", "submitbudget", &submitbudget, true, true, false},
+        {"GLPM", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"GLPM", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"GLPM", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"GLPM", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"GLPM", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"GLPM", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"GLPM", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"GLPM", "checkbudgets", &checkbudgets, true, true, false},
+        {"GLPM", "mnsync", &mnsync, true, true, false},
+        {"GLPM", "spork", &spork, true, true, false},
+        {"GLPM", "getpoolinfo", &getpoolinfo, true, true, false},
 #ifdef ENABLE_WALLET
-        {"TSC", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"GLPM", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -627,16 +627,16 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-                                             _("To use TSCd, or the -server option to TSC-qt, you must set an rpcpassword in the configuration file:\n"
+                                             _("To use GLPMd, or the -server option to GLPM-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
-                                               "rpcuser=TSCrpc\n"
+                                               "rpcuser=GLPMrpc\n"
                                                "rpcpassword=%s\n"
                                                "(you do not need to remember this password)\n"
                                                "The username and password MUST NOT be the same.\n"
                                                "If the file does not exist, create it with owner-readable-only file permissions.\n"
                                                "It is also recommended to set alertnotify so you are notified of problems;\n"
-                                               "for example: alertnotify=echo %%s | mail -s \"TSC Alert\" admin@foo.com\n"),
+                                               "for example: alertnotify=echo %%s | mail -s \"GLPM Alert\" admin@foo.com\n"),
                                              GetConfigFile().string(),
                                              EncodeBase58(&rand_pwd[0], &rand_pwd[0] + 32)),
             "", CClientUIInterface::MSG_ERROR | CClientUIInterface::SECURE);
@@ -1087,7 +1087,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> TSC-cli " + methodname + " " + args + "\n";
+    return "> GLPM-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

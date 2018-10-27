@@ -186,6 +186,6 @@
     <name>ZPhrControlDialog</name>
     </context>
 <context>
-    <name>TSC-core</name>
+    <name>GLPM-core</name>
     </context>
 </TS>

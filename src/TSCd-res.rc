@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "TSC"
-            VALUE "FileDescription",    "TSCd (OSS daemon/client for TSC)"
+            VALUE "CompanyName",        "GLPM"
+            VALUE "FileDescription",    "GLPMd (OSS daemon/client for GLPM)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "TSCd"
+            VALUE "InternalName",       "GLPMd"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "TSCd.exe"
-            VALUE "ProductName",        "TSCd"
+            VALUE "OriginalFilename",   "GLPMd.exe"
+            VALUE "ProductName",        "GLPMd"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

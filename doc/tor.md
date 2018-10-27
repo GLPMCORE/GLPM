@@ -1,7 +1,7 @@
-TOR SUPPORT IN TSC
+TOR SUPPORT IN GLPM
 =======================
 
-It is possible to run TSC as a Tor hidden service, and connect to such services.
+It is possible to run GLPM as a Tor hidden service, and connect to such services.
 
 The following directions assume you have a Tor proxy running on port 9050. Many
 distributions default to having a SOCKS proxy listening on port 9050, but others
@@ -10,10 +10,10 @@ port. See [Tor Project FAQ:TBBSocksPort](https://www.torproject.org/docs/faq.htm
 for how to properly configure Tor.
 
 
-Run TSC behind a Tor proxy
+Run GLPM behind a Tor proxy
 ----------------------------------
 
-The first step is running TSC behind a Tor proxy. This will already make all
+The first step is running GLPM behind a Tor proxy. This will already make all
 outgoing connections be anonymized, but more is possible.
 ```
 -proxy=ip:port  Set the proxy server. If SOCKS5 is selected (default), this proxy
@@ -38,15 +38,15 @@ outgoing connections be anonymized, but more is possible.
 An example how to start the client if the Tor proxy is running on local host on
 port 9050 and only allows .onion nodes to connect:
 ```
-./TSCd -onion=127.0.0.1:9050 -onlynet=tor -listen=0 -addnode=dnetzj6l4cvo2fxy.onion:888
+./GLPMd -onion=127.0.0.1:9050 -onlynet=tor -listen=0 -addnode=dnetzj6l4cvo2fxy.onion:888
 ```
 
 In a typical situation, this suffices to run behind a Tor proxy:
 ```
-./TSCd -proxy=127.0.0.1:9050
+./GLPMd -proxy=127.0.0.1:9050
 ```
 
-Run a TSC hidden server
+Run a GLPM hidden server
 -------------------------------
 
 If you configure your Tor system accordingly, it is possible to make your node also
@@ -69,12 +69,12 @@ NumEntryGuards 8
 ```
 
 The directory can be different of course, but (both) port numbers should be equal to
-your TSCd's P2P listen port (6080 by default).
+your GLPMd's P2P listen port (6080 by default).
 ```
--externalip=X   You can tell TSC about its publicly reachable address using
+-externalip=X   You can tell GLPM about its publicly reachable address using
                 this option, and this can be a .onion address. Given the above
                 configuration, you can find your onion address in
-                /var/lib/tor/TSC-service/hostname. Onion addresses are given
+                /var/lib/tor/GLPM-service/hostname. Onion addresses are given
                 preference for your node to advertize itself with, for connections
                 coming from unroutable addresses (such as 127.0.0.1, where the
                 Tor proxy typically runs).
@@ -92,14 +92,14 @@ your TSCd's P2P listen port (6080 by default).
 
 In a typical situation, where you're only reachable via Tor, this should suffice:
 ```
-./TSCd -proxy=127.0.0.1:9050 -externalip=dnetzj6l4cvo2fxy.onion:888 -listen
+./GLPMd -proxy=127.0.0.1:9050 -externalip=dnetzj6l4cvo2fxy.onion:888 -listen
 ```
 
 (obviously, replace the Onion address with your own). If you don't care too much
 about hiding your node, and want to be reachable on IPv4 as well, additionally
 specify:
 ```
-./TSCd ... -discover
+./GLPMd ... -discover
 ```
 
 and open port 6080 on your firewall (or use -upnp).
@@ -107,10 +107,10 @@ and open port 6080 on your firewall (or use -upnp).
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
 ```
-./TSCd -onion=127.0.0.1:9050 -externalip=dnetzj6l4cvo2fxy.onion:888 -discover
+./GLPMd -onion=127.0.0.1:9050 -externalip=dnetzj6l4cvo2fxy.onion:888 -discover
 ```
 
-List of known TSC Tor relays
+List of known GLPM Tor relays
 ------------------------------------
 ```
 onion:

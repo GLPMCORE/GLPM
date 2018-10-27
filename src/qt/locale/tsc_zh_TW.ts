@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>選擇要匯出TSC幣的位址</translation>
+        <translation>選擇要匯出GLPM幣的位址</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>選擇要接收TSC幣的位址</translation>
+        <translation>選擇要接收GLPM幣的位址</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -62,12 +62,12 @@
         <translation>接收的位址</translation>
     </message>
     <message>
-        <source>These are your TSC addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>這是你用來付款的 TSC 位址, 送出前, 請務必確認金額及接收位址是否正確.</translation>
+        <source>These are your GLPM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>這是你用來付款的 GLPM 位址, 送出前, 請務必確認金額及接收位址是否正確.</translation>
     </message>
     <message>
-        <source>These are your TSC addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>這是你用來接收款項的 TSC 位址, 建議你每次付款都使用新的位址.</translation>
+        <source>These are your GLPM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>這是你用來接收款項的 GLPM 位址, 建議你每次付款都使用新的位址.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -164,16 +164,16 @@
         <translation>錢包確認加密</translation>
     </message>
     <message>
-        <source>TSC will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TSCs from being stolen by malware infecting your computer.</source>
-        <translation>TSC 現在會關閉程式來處理加密流程, 請注意, 僅僅是加密你的錢包並不能完全保護你的 TSC 幣被可疑軟體或病毒偷走的風險.</translation>
+        <source>GLPM will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your GLPMs from being stolen by malware infecting your computer.</source>
+        <translation>GLPM 現在會關閉程式來處理加密流程, 請注意, 僅僅是加密你的錢包並不能完全保護你的 GLPM 幣被可疑軟體或病毒偷走的風險.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>確定要加密你的錢包?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TSC&lt;/b&gt;!</source>
-        <translation>請注意: 如果你加密了你的錢包但是卻忘記你設定的密碼, &lt;b&gt;你將會失去錢包裡的錢(TSC)&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLPM&lt;/b&gt;!</source>
+        <translation>請注意: 如果你加密了你的錢包但是卻忘記你設定的密碼, &lt;b&gt;你將會失去錢包裡的錢(GLPM)&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -227,16 +227,16 @@
         <translation>&amp;BIP 38 加密</translation>
     </message>
     <message>
-        <source>Enter a TSC Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>輸入你想 BIP 38 加密的 TSC 位址, 輸入密碼在中間欄, 按下加密按鈕來產生加密私鑰.</translation>
+        <source>Enter a GLPM Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>輸入你想 BIP 38 加密的 GLPM 位址, 輸入密碼在中間欄, 按下加密按鈕來產生加密私鑰.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>位址:</translation>
     </message>
     <message>
-        <source>The TSC address to sign the message with</source>
-        <translation>對訊息簽名的 TSC 位址</translation>
+        <source>The GLPM address to sign the message with</source>
+        <translation>對訊息簽名的 GLPM 位址</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -267,8 +267,8 @@
         <translation>拷貝目前的簽章到系統剪貼簿</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this TSC address</source>
-        <translation>使用簽章來證明你是該  TSC 位址的擁有者,</translation>
+        <source>Sign the message to prove you own this GLPM address</source>
+        <translation>使用簽章來證明你是該  GLPM 位址的擁有者,</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -287,12 +287,12 @@
         <translation>&amp;BIP 38 解密</translation>
     </message>
     <message>
-        <source>The TSC address the message was signed with</source>
-        <translation>此訊息之 TSC 位址已簽章於</translation>
+        <source>The GLPM address the message was signed with</source>
+        <translation>此訊息之 GLPM 位址已簽章於</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified TSC address</source>
-        <translation>驗證訊息以確保該  TSC 位址已被簽章</translation>
+        <source>Verify the message to ensure it was signed with the specified GLPM address</source>
+        <translation>驗證訊息以確保該  GLPM 位址已被簽章</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -582,16 +582,16 @@
         <translation>Tabs 工具列</translation>
     </message>
     <message>
-        <source>TSC Core</source>
-        <translation>TSC Core</translation>
+        <source>GLPM Core</source>
+        <translation>GLPM Core</translation>
     </message>
     <message>
-        <source>Send coins to a TSC address</source>
-        <translation>送出錢幣到 TSC 地址</translation>
+        <source>Send coins to a GLPM address</source>
+        <translation>送出錢幣到 GLPM 地址</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and TSC: URIs)</source>
-        <translation>請求付款 (會產生 QR Code跟 TSC 位址)</translation>
+        <source>Request payments (generates QR codes and GLPM: URIs)</source>
+        <translation>請求付款 (會產生 QR Code跟 GLPM 位址)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -602,24 +602,24 @@
         <translation>瀏覽 Masternodes</translation>
     </message>
     <message>
-        <source>&amp;About TSC Core</source>
-        <translation>&amp;關於 TSC Core</translation>
+        <source>&amp;About GLPM Core</source>
+        <translation>&amp;關於 GLPM Core</translation>
     </message>
     <message>
-        <source>Show information about TSC Core</source>
-        <translation>顯示 TSC Core 相關資訊</translation>
+        <source>Show information about GLPM Core</source>
+        <translation>顯示 GLPM Core 相關資訊</translation>
     </message>
     <message>
-        <source>Modify configuration options for TSC</source>
-        <translation>修改 TSC 設定</translation>
+        <source>Modify configuration options for GLPM</source>
+        <translation>修改 GLPM 設定</translation>
     </message>
     <message>
-        <source>Sign messages with your TSC addresses to prove you own them</source>
-        <translation>使用你的 TSC 位址對訊息簽章, 來證明你是擁有者</translation>
+        <source>Sign messages with your GLPM addresses to prove you own them</source>
+        <translation>使用你的 GLPM 位址對訊息簽章, 來證明你是擁有者</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified TSC addresses</source>
-        <translation>驗證訊息簽章與 TSC 位址吻合</translation>
+        <source>Verify messages to ensure they were signed with specified GLPM addresses</source>
+        <translation>驗證訊息簽章與 GLPM 位址吻合</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -650,8 +650,8 @@
         <translation>打開Masternode設定檔</translation>
     </message>
     <message>
-        <source>Open a TSC: URI or payment request</source>
-        <translation>打開TSC: 位址或付款請求 </translation>
+        <source>Open a GLPM: URI or payment request</source>
+        <translation>打開GLPM: 位址或付款請求 </translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -662,12 +662,12 @@
         <translation>區塊鏈瀏覽視窗</translation>
     </message>
     <message>
-        <source>Show the TSC Core help message to get a list with possible TSC command-line options</source>
-        <translation>顯示 TSC Core 幫助訊息以取得 TSC 命令列表選項</translation>
+        <source>Show the GLPM Core help message to get a list with possible GLPM command-line options</source>
+        <translation>顯示 GLPM Core 幫助訊息以取得 GLPM 命令列表選項</translation>
     </message>
     <message>
-        <source>TSC Core client</source>
-        <translation>TSC Core 客戶端</translation>
+        <source>GLPM Core client</source>
+        <translation>GLPM Core 客戶端</translation>
     </message>
     </context>
 <context>
@@ -696,15 +696,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>TSC Core</source>
-        <translation>TSC Core</translation>
+        <source>GLPM Core</source>
+        <translation>GLPM Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>TSC Core</source>
-        <translation>TSC Core</translation>
+        <source>GLPM Core</source>
+        <translation>GLPM Core</translation>
     </message>
     </context>
 <context>
@@ -836,8 +836,8 @@
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The TSC address to sign the message with</source>
-        <translation>對訊息簽名的 TSC 位址</translation>
+        <source>The GLPM address to sign the message with</source>
+        <translation>對訊息簽名的 GLPM 位址</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -860,16 +860,16 @@
         <translation>拷貝目前的簽章到系統剪貼簿</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this TSC address</source>
-        <translation>使用簽章來證明你是該  TSC 位址的擁有者,</translation>
+        <source>Sign the message to prove you own this GLPM address</source>
+        <translation>使用簽章來證明你是該  GLPM 位址的擁有者,</translation>
     </message>
     <message>
-        <source>The TSC address the message was signed with</source>
-        <translation>此訊息之 TSC 位址已簽章於</translation>
+        <source>The GLPM address the message was signed with</source>
+        <translation>此訊息之 GLPM 位址已簽章於</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified TSC address</source>
-        <translation>驗證訊息以確保該  TSC 位址已被簽章</translation>
+        <source>Verify the message to ensure it was signed with the specified GLPM address</source>
+        <translation>驗證訊息以確保該  GLPM 位址已被簽章</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -907,8 +907,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>TSC Core</source>
-        <translation>TSC Core</translation>
+        <source>GLPM Core</source>
+        <translation>GLPM Core</translation>
     </message>
     </context>
 <context>
@@ -974,6 +974,6 @@
     <name>ZPhrControlDialog</name>
     </context>
 <context>
-    <name>TSC-core</name>
+    <name>GLPM-core</name>
     </context>
 </TS>

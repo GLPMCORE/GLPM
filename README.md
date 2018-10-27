@@ -1,3 +1,3 @@
 Update coming soon!
-# TSCCore
-# TSCCoin
+# GLPMCore
+# GLPMCoin
