@@ -2182,7 +2182,7 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
      //       return 0;
   // }
 	
-    if ((nHeight-1) % 100 == 0){
+    if ((nHeight-1) % 100 == 0 && nHeight > 3){
 	return blockValue * .982318;
 	}
 	// 80% for Masternodes
