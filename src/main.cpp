@@ -2126,6 +2126,7 @@ double ConvertBitsToDouble(unsigned int nBits)
 int64_t GetBlockValue(int nHeight)
 {
     int64_t nSubsidy = 0;
+int nPrevHeight = nHeight - 1;
 
   //  if (Params().NetworkID() == CBaseChainParams::TESTNET) {
     //    if (nHeight < 200 && nHeight > 0)
@@ -2133,21 +2134,23 @@ int64_t GetBlockValue(int nHeight)
    // }
 
     if (nHeight == 0) {
-        nSubsidy = 1 * COIN;  //genesis
+        return 1 * COIN;  //genesis
     } else if(nHeight == 1 ){
-        nSubsidy = 350000000 * COIN;  //1,500,000
-    } else if(nHeight > 1 && nHeight <= 260000) {
-		nSubsidy = 1000 * COIN;
-	} else if(nHeight <= 520000) { //PoS phase
-		nSubsidy = 2000 * COIN; // "instamine"
-    } else if(nHeight <= 780000 ) {
-		nSubsidy = 3000 * COIN;
-    } else if(nHeight <= 1040000 ) { 
-		nSubsidy = 5000 * COIN;
-    } else if(nHeight <= 1300000 ) { 
-		nSubsidy = 6000 * COIN;
-    } else if(nHeight <= 1560000 ) { 
-		nSubsidy = 7500 * COIN;
+        return 5000000 * COIN;  //1,500,000
+    } else  {
+		nSubsidy = 40 * COIN;
+//		nSubsidy *= 0.9;
+}
+//	} else if(nHeight <= 520000) { //PoS phase
+//		nSubsidy = 2000 * COIN; // "instamine"
+  //  } else if(nHeight <= 780000 ) {
+//		nSubsidy = 3000 * COIN;
+  //  } else if(nHeight <= 1040000 ) { 
+//		nSubsidy = 5000 * COIN;
+   // } else if(nHeight <= 1300000 ) { 
+//		nSubsidy = 6000 * COIN;
+  //  } else if(nHeight <= 1560000 ) { 
+//		nSubsidy = 7500 * COIN;
     //} else if(nHeight <=  ) {//switch PoS 
 //		nSubsidy = 2 * COIN;
   //  } else if(nHeight <= 7350000 ) { 
@@ -2158,10 +2161,16 @@ int64_t GetBlockValue(int nHeight)
 //		nSubsidy = 5 * COIN;
   //  } else if(nHeight > 840000 && nHeight <= 1050000) { 
     //            nSubsidy = 3 * COIN;
-    } else {
-        nSubsidy = 1000 * COIN;
-    }
-    return nSubsidy;
+
+   if(((nPrevHeight) % 100 == 0)) {
+//        blockReward = blockReward*10;
+	  nSubsidy = ((nSubsidy*.1)*100) + (nSubsidy * .18);
+    //    nSubsidy = ((nSubsidy*.25)*100) + (nSubsidy * .75);
+	} else {
+        nSubsidy *= 0.9;
+}
+
+       return nSubsidy;
 }
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount)
@@ -2173,11 +2182,14 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
      //       return 0;
   // }
 	
+    if ((nHeight-1) % 100 == 0){
+	return blockValue * .982318;
+	}
 	// 80% for Masternodes
 //	if (nHeight <= 1500) {
 //	      ret = blockValue *.000001;
 	if (nHeight > 1) {
-		  ret = blockValue  / 100 * 50; //85%
+		  ret = blockValue  / 100 * 8; //85%
 	}
 //	} else if (nHeight >= 3000) {
 //		ret = blockValue / 100 * 70;

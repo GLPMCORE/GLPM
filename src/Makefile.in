@@ -491,24 +491,21 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bitcoinaddressvalidator.cpp \
 	qt/forms/rpcconsole.ui qt/forms/sendcoinsdialog.ui \
 	qt/forms/sendcoinsentry.ui qt/forms/signverifymessagedialog.ui \
 	qt/forms/transactiondescdialog.ui \
-	qt/forms/zGLPMcontroldialog.ui qt/GLPM.qrc \
-	qt/GLPM_locale.qrc qt/locale/GLPM_bg.ts \
-	qt/locale/GLPM_ca.ts qt/locale/GLPM_cs.ts \
-	qt/locale/GLPM_da.ts qt/locale/GLPM_de.ts \
-	qt/locale/GLPM_en.ts qt/locale/GLPM_en_US.ts \
-	qt/locale/GLPM_es.ts qt/locale/GLPM_fi.ts \
-	qt/locale/GLPM_fr_FR.ts qt/locale/GLPM_hr.ts \
-	qt/locale/GLPM_it.ts qt/locale/GLPM_ja.ts \
+	qt/forms/zGLPMcontroldialog.ui qt/GLPM.qrc qt/GLPM_locale.qrc \
+	qt/locale/GLPM_bg.ts qt/locale/GLPM_ca.ts qt/locale/GLPM_cs.ts \
+	qt/locale/GLPM_da.ts qt/locale/GLPM_de.ts qt/locale/GLPM_en.ts \
+	qt/locale/GLPM_en_US.ts qt/locale/GLPM_es.ts \
+	qt/locale/GLPM_fi.ts qt/locale/GLPM_fr_FR.ts \
+	qt/locale/GLPM_hr.ts qt/locale/GLPM_it.ts qt/locale/GLPM_ja.ts \
 	qt/locale/GLPM_ko_KR.ts qt/locale/GLPM_nl.ts \
 	qt/locale/GLPM_pl.ts qt/locale/GLPM_pt.ts \
 	qt/locale/GLPM_pt_BR.ts qt/locale/GLPM_ro_RO.ts \
-	qt/locale/GLPM_ru.ts qt/locale/GLPM_sk.ts \
-	qt/locale/GLPM_sv.ts qt/locale/GLPM_tr.ts \
-	qt/locale/GLPM_uk.ts qt/locale/GLPM_zh_CN.ts \
-	qt/locale/GLPM_zh_TW.ts qt/paymentrequest.proto \
-	qt/res/icons/add.png qt/res/icons/address-book.png \
-	qt/res/icons/bitcoin.ico qt/res/icons/bitcoin.png \
-	qt/res/icons/bitcoin_testnet.ico \
+	qt/locale/GLPM_ru.ts qt/locale/GLPM_sk.ts qt/locale/GLPM_sv.ts \
+	qt/locale/GLPM_tr.ts qt/locale/GLPM_uk.ts \
+	qt/locale/GLPM_zh_CN.ts qt/locale/GLPM_zh_TW.ts \
+	qt/paymentrequest.proto qt/res/icons/add.png \
+	qt/res/icons/address-book.png qt/res/icons/bitcoin.ico \
+	qt/res/icons/bitcoin.png qt/res/icons/bitcoin_testnet.ico \
 	qt/res/icons/bitcoin_testnet.png qt/res/icons/browse.png \
 	qt/res/icons/clock1.png qt/res/icons/clock2.png \
 	qt/res/icons/clock3.png qt/res/icons/clock4.png \
@@ -535,9 +532,9 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bitcoinaddressvalidator.cpp \
 	qt/res/icons/tx_output.png qt/res/icons/tx_mined.png \
 	qt/res/icons/unit_GLPM.png qt/res/icons/unit_mGLPM.png \
 	qt/res/icons/unit_uGLPM.png qt/res/icons/unit_tGLPM.png \
-	qt/res/icons/unit_tmGLPM.png \
-	qt/res/icons/unit_tuGLPM.png qt/res/images/about.png \
-	qt/res/images/splash.png qt/res/images/splash_testnet.png \
+	qt/res/icons/unit_tmGLPM.png qt/res/icons/unit_tuGLPM.png \
+	qt/res/images/about.png qt/res/images/splash.png \
+	qt/res/images/splash_testnet.png \
 	qt/res/images/GLPM_logo_horizontal.png \
 	qt/res/images/downArrow.png qt/res/images/downArrow_small.png \
 	qt/res/images/upArrow_small.png \
@@ -763,8 +760,7 @@ libbitcoinconsensus_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 PROGRAMS = $(bin_PROGRAMS)
 am__GLPM_cli_SOURCES_DIST = GLPM-cli.cpp GLPM-cli-res.rc
 @TARGET_WINDOWS_TRUE@am__objects_10 = GLPM-cli-res.$(OBJEXT)
-am_GLPM_cli_OBJECTS = GLPM_cli-GLPM-cli.$(OBJEXT) \
-	$(am__objects_10)
+am_GLPM_cli_OBJECTS = GLPM_cli-GLPM-cli.$(OBJEXT) $(am__objects_10)
 GLPM_cli_OBJECTS = $(am_GLPM_cli_OBJECTS)
 GLPM_cli_DEPENDENCIES = $(LIBBITCOIN_CLI) $(LIBBITCOIN_UTIL) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
@@ -799,9 +795,8 @@ GLPMd_DEPENDENCIES = $(LIBBITCOIN_SERVER) $(LIBBITCOIN_COMMON) \
 GLPMd_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CXXLD) $(AM_CXXFLAGS) \
 	$(CXXFLAGS) $(GLPMd_LDFLAGS) $(LDFLAGS) -o $@
-am__qt_GLPM_qt_SOURCES_DIST = qt/GLPM.cpp \
-	qt/macdockiconhandler.mm qt/macnotificationhandler.mm \
-	qt/res/GLPM-qt-res.rc
+am__qt_GLPM_qt_SOURCES_DIST = qt/GLPM.cpp qt/macdockiconhandler.mm \
+	qt/macnotificationhandler.mm qt/res/GLPM-qt-res.rc
 @ENABLE_QT_TRUE@am__objects_12 =  \
 @ENABLE_QT_TRUE@	qt/qt_GLPM_qt-macdockiconhandler.$(OBJEXT) \
 @ENABLE_QT_TRUE@	qt/qt_GLPM_qt-macnotificationhandler.$(OBJEXT)
@@ -810,8 +805,7 @@ am__qt_GLPM_qt_SOURCES_DIST = qt/GLPM.cpp \
 @ENABLE_QT_TRUE@am__objects_14 = qt/res/GLPM-qt-res.$(OBJEXT)
 @ENABLE_QT_TRUE@@TARGET_WINDOWS_TRUE@am__objects_15 =  \
 @ENABLE_QT_TRUE@@TARGET_WINDOWS_TRUE@	$(am__objects_14)
-@ENABLE_QT_TRUE@am_qt_GLPM_qt_OBJECTS =  \
-@ENABLE_QT_TRUE@	qt/qt_GLPM_qt-GLPM.$(OBJEXT) \
+@ENABLE_QT_TRUE@am_qt_GLPM_qt_OBJECTS = qt/qt_GLPM_qt-GLPM.$(OBJEXT) \
 @ENABLE_QT_TRUE@	$(am__objects_13) $(am__objects_15)
 qt_GLPM_qt_OBJECTS = $(am_qt_GLPM_qt_OBJECTS)
 @ENABLE_QT_TRUE@@ENABLE_ZMQ_TRUE@am__DEPENDENCIES_5 =  \
@@ -830,10 +824,9 @@ qt_GLPM_qt_OBJECTS = $(am_qt_GLPM_qt_OBJECTS)
 @ENABLE_QT_TRUE@	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
 @ENABLE_QT_TRUE@	$(LIBSECP256K1) $(am__DEPENDENCIES_1) \
 @ENABLE_QT_TRUE@	$(am__DEPENDENCIES_1)
-qt_GLPM_qt_LINK = $(LIBTOOL) $(AM_V_lt) \
-	$(qt_GLPM_qt_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link \
-	$(OBJCXXLD) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) \
-	$(qt_GLPM_qt_LDFLAGS) $(LDFLAGS) -o $@
+qt_GLPM_qt_LINK = $(LIBTOOL) $(AM_V_lt) $(qt_GLPM_qt_LIBTOOLFLAGS) \
+	$(LIBTOOLFLAGS) --mode=link $(OBJCXXLD) $(AM_OBJCXXFLAGS) \
+	$(OBJCXXFLAGS) $(qt_GLPM_qt_LDFLAGS) $(LDFLAGS) -o $@
 am__qt_test_test_GLPM_qt_SOURCES_DIST = qt/test/test_main.cpp \
 	qt/test/uritests.cpp qt/test/uritests.h \
 	qt/test/paymentrequestdata.h qt/test/paymentservertests.h \
@@ -847,8 +840,7 @@ am__qt_test_test_GLPM_qt_SOURCES_DIST = qt/test/test_main.cpp \
 @ENABLE_QT_TESTS_TRUE@	$(am__objects_17)
 @ENABLE_QT_TESTS_TRUE@nodist_qt_test_test_GLPM_qt_OBJECTS =  \
 @ENABLE_QT_TESTS_TRUE@	$(am__objects_18)
-qt_test_test_GLPM_qt_OBJECTS =  \
-	$(am_qt_test_test_GLPM_qt_OBJECTS) \
+qt_test_test_GLPM_qt_OBJECTS = $(am_qt_test_test_GLPM_qt_OBJECTS) \
 	$(nodist_qt_test_test_GLPM_qt_OBJECTS)
 @ENABLE_QT_TESTS_TRUE@@ENABLE_ZMQ_TRUE@am__DEPENDENCIES_6 =  \
 @ENABLE_QT_TESTS_TRUE@@ENABLE_ZMQ_TRUE@	$(LIBBITCOIN_ZMQ) \
@@ -956,17 +948,16 @@ am__test_test_GLPM_SOURCES_DIST =  \
 @ENABLE_TESTS_TRUE@am_test_test_GLPM_OBJECTS = $(am__objects_20) \
 @ENABLE_TESTS_TRUE@	$(am__objects_1) $(am__objects_1)
 @ENABLE_TESTS_TRUE@am__objects_21 = $(am__objects_1) $(am__objects_1)
-@ENABLE_TESTS_TRUE@nodist_test_test_GLPM_OBJECTS =  \
-@ENABLE_TESTS_TRUE@	$(am__objects_21)
+@ENABLE_TESTS_TRUE@nodist_test_test_GLPM_OBJECTS = $(am__objects_21)
 test_test_GLPM_OBJECTS = $(am_test_test_GLPM_OBJECTS) \
 	$(nodist_test_test_GLPM_OBJECTS)
 @BUILD_BITCOIN_LIBS_TRUE@am__DEPENDENCIES_7 = libbitcoinconsensus.la
 @ENABLE_TESTS_TRUE@@ENABLE_ZMQ_TRUE@am__DEPENDENCIES_8 =  \
 @ENABLE_TESTS_TRUE@@ENABLE_ZMQ_TRUE@	$(am__DEPENDENCIES_1)
-@ENABLE_TESTS_TRUE@test_test_GLPM_DEPENDENCIES =  \
-@ENABLE_TESTS_TRUE@	$(LIBBITCOIN_SERVER) $(LIBBITCOIN_CLI) \
-@ENABLE_TESTS_TRUE@	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) \
-@ENABLE_TESTS_TRUE@	$(LIBBITCOIN_CRYPTO) $(LIBBITCOIN_UNIVALUE) \
+@ENABLE_TESTS_TRUE@test_test_GLPM_DEPENDENCIES = $(LIBBITCOIN_SERVER) \
+@ENABLE_TESTS_TRUE@	$(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) \
+@ENABLE_TESTS_TRUE@	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
+@ENABLE_TESTS_TRUE@	$(LIBBITCOIN_UNIVALUE) \
 @ENABLE_TESTS_TRUE@	$(LIBBITCOIN_ZEROCOIN) \
 @ENABLE_TESTS_TRUE@	$(am__DEPENDENCIES_2) $(am__DEPENDENCIES_3) \
 @ENABLE_TESTS_TRUE@	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
@@ -1059,11 +1050,10 @@ SOURCES = $(crypto_libbitcoin_crypto_a_SOURCES) \
 	$(nodist_qt_libbitcoinqt_a_SOURCES) \
 	$(univalue_libbitcoin_univalue_a_SOURCES) \
 	$(libbitcoinconsensus_la_SOURCES) $(GLPM_cli_SOURCES) \
-	$(GLPM_tx_SOURCES) $(GLPMd_SOURCES) \
-	$(qt_GLPM_qt_SOURCES) $(qt_test_test_GLPM_qt_SOURCES) \
+	$(GLPM_tx_SOURCES) $(GLPMd_SOURCES) $(qt_GLPM_qt_SOURCES) \
+	$(qt_test_test_GLPM_qt_SOURCES) \
 	$(nodist_qt_test_test_GLPM_qt_SOURCES) \
-	$(test_test_GLPM_SOURCES) \
-	$(nodist_test_test_GLPM_SOURCES)
+	$(test_test_GLPM_SOURCES) $(nodist_test_test_GLPM_SOURCES)
 DIST_SOURCES = $(crypto_libbitcoin_crypto_a_SOURCES) \
 	$(libbitcoin_cli_a_SOURCES) $(libbitcoin_common_a_SOURCES) \
 	$(libbitcoin_server_a_SOURCES) \
@@ -2036,8 +2026,7 @@ EXTRA_DIST = leveldb $(am__append_18)
 @ENABLE_TESTS_TRUE@	test/serialize_tests.cpp \
 @ENABLE_TESTS_TRUE@	test/sighash_tests.cpp \
 @ENABLE_TESTS_TRUE@	test/sigopcount_tests.cpp \
-@ENABLE_TESTS_TRUE@	test/skiplist_tests.cpp \
-@ENABLE_TESTS_TRUE@	test/test_GLPM.cpp \
+@ENABLE_TESTS_TRUE@	test/skiplist_tests.cpp test/test_GLPM.cpp \
 @ENABLE_TESTS_TRUE@	test/timedata_tests.cpp \
 @ENABLE_TESTS_TRUE@	test/torcontrol_tests.cpp \
 @ENABLE_TESTS_TRUE@	test/transaction_tests.cpp \
@@ -2360,8 +2349,8 @@ EXTRA_DIST = leveldb $(am__append_18)
 @ENABLE_QT_TRUE@qt_GLPM_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
 @ENABLE_QT_TRUE@  $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
 
-@ENABLE_QT_TRUE@qt_GLPM_qt_SOURCES = qt/GLPM.cpp \
-@ENABLE_QT_TRUE@	$(am__append_26) $(am__append_27)
+@ENABLE_QT_TRUE@qt_GLPM_qt_SOURCES = qt/GLPM.cpp $(am__append_26) \
+@ENABLE_QT_TRUE@	$(am__append_27)
 @ENABLE_QT_TRUE@qt_GLPM_qt_LDADD = qt/libbitcoinqt.a \
 @ENABLE_QT_TRUE@	$(LIBBITCOIN_SERVER) $(am__append_28) \
 @ENABLE_QT_TRUE@	$(am__append_29) $(LIBBITCOIN_CLI) \
@@ -2749,8 +2738,8 @@ qt/qt_libbitcoinqt_a-walletmodeltransaction.$(OBJEXT):  \
 	qt/$(am__dirstamp) qt/$(DEPDIR)/$(am__dirstamp)
 qt/qt_libbitcoinqt_a-walletview.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
-qt/qt_libbitcoinqt_a-zGLPMcontroldialog.$(OBJEXT):  \
-	qt/$(am__dirstamp) qt/$(DEPDIR)/$(am__dirstamp)
+qt/qt_libbitcoinqt_a-zGLPMcontroldialog.$(OBJEXT): qt/$(am__dirstamp) \
+	qt/$(DEPDIR)/$(am__dirstamp)
 qt/qt_libbitcoinqt_a-moc_addressbookpage.$(OBJEXT):  \
 	qt/$(am__dirstamp) qt/$(DEPDIR)/$(am__dirstamp)
 qt/qt_libbitcoinqt_a-moc_addresstablemodel.$(OBJEXT):  \
@@ -3057,22 +3046,22 @@ test/test_test_GLPM-zerocoin_transactions_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
 test/test_test_GLPM-benchmark_zerocoin.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_GLPM-tutorial_zerocoin.$(OBJEXT):  \
-	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_GLPM-libzerocoin_tests.$(OBJEXT):  \
-	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_GLPM-allocator_tests.$(OBJEXT):  \
-	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
+test/test_test_GLPM-tutorial_zerocoin.$(OBJEXT): test/$(am__dirstamp) \
+	test/$(DEPDIR)/$(am__dirstamp)
+test/test_test_GLPM-libzerocoin_tests.$(OBJEXT): test/$(am__dirstamp) \
+	test/$(DEPDIR)/$(am__dirstamp)
+test/test_test_GLPM-allocator_tests.$(OBJEXT): test/$(am__dirstamp) \
+	test/$(DEPDIR)/$(am__dirstamp)
 test/test_test_GLPM-base32_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
 test/test_test_GLPM-base58_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
 test/test_test_GLPM-base64_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_GLPM-checkblock_tests.$(OBJEXT):  \
-	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_GLPM-Checkpoints_tests.$(OBJEXT):  \
-	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
+test/test_test_GLPM-checkblock_tests.$(OBJEXT): test/$(am__dirstamp) \
+	test/$(DEPDIR)/$(am__dirstamp)
+test/test_test_GLPM-Checkpoints_tests.$(OBJEXT): test/$(am__dirstamp) \
+	test/$(DEPDIR)/$(am__dirstamp)
 test/test_test_GLPM-coins_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
 test/test_test_GLPM-compress_tests.$(OBJEXT): test/$(am__dirstamp) \
@@ -3103,40 +3092,40 @@ test/test_test_GLPM-rpc_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
 test/test_test_GLPM-sanity_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_GLPM-script_P2SH_tests.$(OBJEXT):  \
-	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
+test/test_test_GLPM-script_P2SH_tests.$(OBJEXT): test/$(am__dirstamp) \
+	test/$(DEPDIR)/$(am__dirstamp)
 test/test_test_GLPM-script_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_GLPM-scriptnum_tests.$(OBJEXT):  \
-	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_GLPM-serialize_tests.$(OBJEXT):  \
-	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
+test/test_test_GLPM-scriptnum_tests.$(OBJEXT): test/$(am__dirstamp) \
+	test/$(DEPDIR)/$(am__dirstamp)
+test/test_test_GLPM-serialize_tests.$(OBJEXT): test/$(am__dirstamp) \
+	test/$(DEPDIR)/$(am__dirstamp)
 test/test_test_GLPM-sighash_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_GLPM-sigopcount_tests.$(OBJEXT):  \
-	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
+test/test_test_GLPM-sigopcount_tests.$(OBJEXT): test/$(am__dirstamp) \
+	test/$(DEPDIR)/$(am__dirstamp)
 test/test_test_GLPM-skiplist_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
 test/test_test_GLPM-test_GLPM.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
 test/test_test_GLPM-timedata_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_GLPM-torcontrol_tests.$(OBJEXT):  \
-	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_GLPM-transaction_tests.$(OBJEXT):  \
-	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
+test/test_test_GLPM-torcontrol_tests.$(OBJEXT): test/$(am__dirstamp) \
+	test/$(DEPDIR)/$(am__dirstamp)
+test/test_test_GLPM-transaction_tests.$(OBJEXT): test/$(am__dirstamp) \
+	test/$(DEPDIR)/$(am__dirstamp)
 test/test_test_GLPM-uint256_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
 test/test_test_GLPM-univalue_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
 test/test_test_GLPM-util_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_GLPM-accounting_tests.$(OBJEXT):  \
-	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
+test/test_test_GLPM-accounting_tests.$(OBJEXT): test/$(am__dirstamp) \
+	test/$(DEPDIR)/$(am__dirstamp)
 test/test_test_GLPM-wallet_tests.$(OBJEXT): test/$(am__dirstamp) \
 	test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_GLPM-rpc_wallet_tests.$(OBJEXT):  \
-	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
+test/test_test_GLPM-rpc_wallet_tests.$(OBJEXT): test/$(am__dirstamp) \
+	test/$(DEPDIR)/$(am__dirstamp)
 
 test/test_GLPM$(EXEEXT): $(test_test_GLPM_OBJECTS) $(test_test_GLPM_DEPENDENCIES) $(EXTRA_test_test_GLPM_DEPENDENCIES) test/$(am__dirstamp)
 	@rm -f test/test_GLPM$(EXEEXT)

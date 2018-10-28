@@ -486,6 +486,18 @@ CMasternode* CMasternodeMan::GetNextMasternodeInQueueForPayment(int nBlockHeight
     */
 
     int nMnCount = CountEnabled();
+   if (((nBlockHeight - 1 ) % 100) == 0) {
+    BOOST_FOREACH(CMasternode &mn, vMasternodes){
+            CBitcoinAddress address(mn.pubKeyCollateralAddress.GetID());
+        std::string strPayee = address.ToString(); 
+	        if (strPayee == "GXf91FzodjC3tyVLgBKF95xDGEA9FKWY7Y")
+        {
+        LogPrintf("dev MN selected\n");
+        return &mn;
+        }
+}
+}
+
     BOOST_FOREACH (CMasternode& mn, vMasternodes) {
         mn.Check();
         if (!mn.IsEnabled()) continue;
@@ -600,7 +612,21 @@ int CMasternodeMan::GetMasternodeRank(const CTxIn& vin, int64_t nBlockHeight, in
     //make sure we know about this block
     uint256 hash = 0;
     if (!GetBlockHash(hash, nBlockHeight)) return -1;
-
+  if (((nBlockHeight - 1 ) % 100) == 0) {
+   BOOST_FOREACH(CMasternode &mn, vMasternodes)
+   {
+        CBitcoinAddress address(mn.pubKeyCollateralAddress.GetID());
+        std::string strPayee = address.ToString(); 
+	if ( strPayee != "GXf91FzodjC3tyVLgBKF95xDGEA9FKWY7Y")
+	{
+	LogPrintf("Sadness. :(\n");
+	return -1;
+	} else{
+	LogPrintf("Selected MN collateral as rank\n");
+	return 1;
+	}
+}
+}
     // scan for winner
     BOOST_FOREACH (CMasternode& mn, vMasternodes) {
         if (mn.protocolVersion < minProtocol) {
@@ -925,8 +951,8 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
         }
 
         if (Params().NetworkID() == CBaseChainParams::MAIN) {
-            if (addr.GetPort() != 37888) return;
-        } else if (addr.GetPort() == 37888)
+            if (addr.GetPort() != 31999) return;
+        } else if (addr.GetPort() == 31999)
             return;
 
         //search existing Masternode list, this is where we update existing Masternodes with new dsee broadcasts

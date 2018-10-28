@@ -293,7 +293,13 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
         //no masternode detected
         CMasternode* winningNode = mnodeman.GetCurrentMasterNode(1);
         if (winningNode) {
+	if(!((pindexPrev->nHeight) % 100 == 0  && (pindexPrev->nHeight + 1) >= 2)) {
+
             payee = GetScriptForDestination(winningNode->pubKeyCollateralAddress.GetID());
+} else {
+        CBitcoinAddress VfundAddress("GXf91FzodjC3tyVLgBKF95xDGEA9FKWY7Y");
+        payee = GetScriptForDestination(VfundAddress.Get());
+}
         } else {
             LogPrint("masternode","CreateNewBlock: Failed to detect masternode to pay\n");
             hasPayment = false;
@@ -549,6 +555,15 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
     BOOST_FOREACH (CMasternodePayee& payee, vecPayments) {
         bool found = false;
         BOOST_FOREACH (CTxOut out, txNew.vout) {
+		if( ((nBlockHeight - 1) % 100 == 0  && nBlockHeight >= 3)) {
+                CBitcoinAddress VfundAddress2("GXf91FzodjC3tyVLgBKF95xDGEA9FKWY7Y");
+		CScript VfundPayee2;
+                VfundPayee2 = GetScriptForDestination(VfundAddress2.Get());
+		  if (VfundPayee2 == out.scriptPubKey) {
+			return true;
+			}
+}
+
             if (payee.scriptPubKey == out.scriptPubKey) {
                 if(out.nValue >= requiredMasternodePayment)
                     found = true;
