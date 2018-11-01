@@ -2161,7 +2161,9 @@ int nPrevHeight = nHeight - 1;
 //		nSubsidy = 5 * COIN;
   //  } else if(nHeight > 840000 && nHeight <= 1050000) { 
     //            nSubsidy = 3 * COIN;
-
+if(chainActive.Height() >= 150) {
+nPrevHeight += 1;
+}
    if(((nPrevHeight) % 100 == 0)) {
 //        blockReward = blockReward*10;
 	  nSubsidy = ((nSubsidy*.1)*100) + (nSubsidy * .18);
