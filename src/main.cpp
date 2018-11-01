@@ -2179,7 +2179,7 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 {
     int64_t ret = 0;
 int nPrevHeight = nHeight;
-if (chainActive.Height() > 580){
+if (chainActive.Height() > 1000){
 nPrevHeight -= 1;
 }
 //    if (Params().NetworkID() == CBaseChainParams::TESTNET) {
