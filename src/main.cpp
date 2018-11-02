@@ -2179,8 +2179,11 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 {
     int64_t ret = 0;
 int nPrevHeight = nHeight;
-if (chainActive.Height() > 1000){
+if (chainActive.Height() > 1050){
 nPrevHeight -= 1;
+}
+if(chainActive.Height() > 1596) {
+nPrevHeight += 2;
 }
 //    if (Params().NetworkID() == CBaseChainParams::TESTNET) {
    //     if (nHeight < 200)
@@ -2194,7 +2197,7 @@ nPrevHeight -= 1;
 //	if (nHeight <= 1500) {
 //	      ret = blockValue *.000001;
 	if (nHeight > 1) {
-		  ret = blockValue  / 100 * 8; //85%
+		  ret = blockValue  / 100 * 80; //85%
 	}
 //	} else if (nHeight >= 3000) {
 //		ret = blockValue / 100 * 70;
